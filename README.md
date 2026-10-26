@@ -26,7 +26,7 @@ Broadcast: `192.168.40.255`
 Each PC is configured with a static IP in its subnet, with Router0's subinterface as the default gateway.
 Verification PC2's static configuration:
 ![PC2 IP configuration]
-<img width="425" height="302" alt="image" src="https://github.com/user-attachments/assets/3037fb03-c374-4dca-92f8-3269dcb8df82" />
+
 
 What I'd do differently
 This is flat subnetting with a router doing inter-subnet routing; it doesn't use VLANs or a router-on-a-stick / Layer 3 switch setup, which is how a real two-department network would more likely be segmented.

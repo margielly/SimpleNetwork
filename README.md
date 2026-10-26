@@ -24,9 +24,7 @@ Valid host range: `192.168.40.129 - 192.168.40.254`
 Broadcast: `192.168.40.255`
 
 Each PC is configured with a static IP in its subnet, with Router0's subinterface as the default gateway.
-Verification
-
-PC2's static configuration:
+Verification PC2's static configuration:
 ![PC2 IP configuration]
 <img width="425" height="302" alt="image" src="https://github.com/user-attachments/assets/3037fb03-c374-4dca-92f8-3269dcb8df82" />
 

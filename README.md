@@ -16,8 +16,8 @@ ACCOUNTS switch (2960-24TT)	Subnet 1: PC0, PC1, Printer0
 DELIVERY switch (2960-24TT)	Subnet 2: PC2, PC3, Printer1
 
 Addressing
-
 Network address `192.168.40.0`, split into two `/25` subnets, sized for up to 126 hosts per department with room to grow.
+
 Subnet 1 (Accounts)
 Subnet mask: `255.255.255.128`
 Network ID: `192.168.40.0`

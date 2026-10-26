@@ -2,7 +2,8 @@ Simple Network Topology
 
 A star topology built in Cisco Packet Tracer: a router connecting two subnets, each with a switch, two PCs, and a networked printer.
 
-![Topology diagram](screenshots/topology.png)
+Topology diagram
+<img width="923" height="545" alt="image" src="https://github.com/user-attachments/assets/1d97ec09-52bc-469c-b8f3-5a14a27a55f3" />
 
 Design
 Device	Role
@@ -26,9 +27,8 @@ Each PC is configured with a static IP in its subnet, with Router0's subinterfac
 Verification
 
 PC2's static configuration:
-![PC2 IP configuration](screenshots/pc2-ip-config.png)
-PC0 successfully pinging PC2 across subnets, confirming the router passes traffic between them:
-![Ping test: PC0 to PC2](screenshots/ping-test.png)
+![PC2 IP configuration]
+<img width="425" height="302" alt="image" src="https://github.com/user-attachments/assets/3037fb03-c374-4dca-92f8-3269dcb8df82" />
 
 What I'd do differently
 This is flat subnetting with a router doing inter-subnet routing; it doesn't use VLANs or a router-on-a-stick / Layer 3 switch setup, which is how a real two-department network would more likely be segmented.

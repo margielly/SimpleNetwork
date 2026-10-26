@@ -1,6 +1,9 @@
 Simple Network Topology
+
 A star topology built in Cisco Packet Tracer: a router connecting two subnets, each with a switch, two PCs, and a networked printer.
+
 ![Topology diagram](screenshots/topology.png)
+
 Design
 Device	Role
 Router0 (2911)	Connects the two subnets
@@ -18,15 +21,20 @@ Subnet mask: `255.255.255.128`
 Network ID: `192.168.40.128`
 Valid host range: `192.168.40.129 - 192.168.40.254`
 Broadcast: `192.168.40.255`
+
 Each PC is configured with a static IP in its subnet, with Router0's subinterface as the default gateway.
 Verification
+
 PC2's static configuration:
 ![PC2 IP configuration](screenshots/pc2-ip-config.png)
 PC0 successfully pinging PC2 across subnets, confirming the router passes traffic between them:
 ![Ping test: PC0 to PC2](screenshots/ping-test.png)
+
 What I'd do differently
 This is flat subnetting with a router doing inter-subnet routing; it doesn't use VLANs or a router-on-a-stick / Layer 3 switch setup, which is how a real two-department network would more likely be segmented.
 No DHCP — every host is statically addressed, which doesn't scale past a handful of devices.
 No access control between the two subnets; anything on Accounts can reach anything on Delivery.
+
 What I learned
+
 Working through this helped me understand subnetting in practice rather than just on paper — picking a mask that fits the host count, calculating valid ranges and broadcast addresses by hand, and seeing how a router's interfaces become the gateway for each side. It also showed me how a ping failure during testing usually traces back to a gateway or mask typo rather than the router itself.

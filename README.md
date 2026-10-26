@@ -6,10 +6,15 @@ Topology diagram
 <img width="923" height="545" alt="image" src="https://github.com/user-attachments/assets/1d97ec09-52bc-469c-b8f3-5a14a27a55f3" />
 
 Design
+
 Device	Role
+
 Router0 (2911)	Connects the two subnets
+
 ACCOUNTS switch (2960-24TT)	Subnet 1: PC0, PC1, Printer0
+
 DELIVERY switch (2960-24TT)	Subnet 2: PC2, PC3, Printer1
+
 Addressing
 
 Network address `192.168.40.0`, split into two `/25` subnets, sized for up to 126 hosts per department with room to grow.
